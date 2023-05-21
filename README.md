@@ -1,3 +1,6 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/gl6rnat4e0w5i7jl/branch/main?svg=true)](https://ci.appveyor.com/project/marinaustinovich/ra16-homeworks-events-state-layouts/branch/main)
+
+
 Расположение товаров
 ===
 
