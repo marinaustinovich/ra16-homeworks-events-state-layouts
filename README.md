@@ -1,9 +1,8 @@
+Расположение товаров
+===
 [![Build status](https://ci.appveyor.com/api/projects/status/gl6rnat4e0w5i7jl/branch/main?svg=true)](https://ci.appveyor.com/project/marinaustinovich/ra16-homeworks-events-state-layouts/branch/main)
 
 deployment: https://marinaustinovich.github.io/ra16-homeworks-events-state-layouts/
-
-Расположение товаров
-===
 
 Вам необоходимо сделать приложение для отображения товаров в интернет-магазине. Заказчик хочет, чтобы пользователь мог увидеть товары в виде карточек или в виде списка, в зависимости от того, какое расположение он выберет. 
 

@@ -1,19 +1,16 @@
-import React from 'react'
-import PropTypes from 'prop-types';
-import './IconSwith.css';
+import React from "react";
+import PropTypes from "prop-types";
+import "./IconSwith.css";
 
-function IconSwitch(props) {
-    const {icon, onSwitch} = props;
-    return (
-        <i className="material-icons" onClick={onSwitch}>
-            {icon}
-        </i>
-    )
-}
+const IconSwitch = ({ icon, onSwitch }) => (
+  <i className="material-icons" onClick={onSwitch}>
+    {icon}
+  </i>
+);
 
 IconSwitch.propTypes = {
-    icon: PropTypes.string.isRequired,
-    onSwitch: PropTypes.func.isRequired,
-}
+  icon: PropTypes.string.isRequired,
+  onSwitch: PropTypes.func.isRequired,
+};
 
-export default IconSwitch
+export default IconSwitch;

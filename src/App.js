@@ -1,10 +1,6 @@
-import './App.css';
-import Store from './components/Store/Store';
+import "./App.css";
+import Store from "./components/Store/Store";
 
-function App() {
-  return (
-    <Store/>
-  );
-}
+const App = () => <Store />;
 
 export default App;

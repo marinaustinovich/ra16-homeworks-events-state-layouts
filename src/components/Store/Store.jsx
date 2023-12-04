@@ -1,32 +1,28 @@
-import React from 'react';
-// import PropTypes from 'prop-types';
-import { useState } from 'react'
-import IconSwitch from '../IconSwitch/IconSwitch';
-import CardsView from '../CardsView/CardsView';
-import products from '../products';
+import React, { useCallback, useState } from "react";
 
-function Store(props) {
-    const [icon, setIcon] = useState("view_list");
-    const [viewMode, setViewMode] = useState("list");
+import IconSwitch from "../IconSwitch/IconSwitch";
+import CardsView from "../CardsView/CardsView";
+import products from "../products";
 
-    const onSwitch = () => {
-        if (icon === 'view_list') {
-            setIcon('view_module');
-            setViewMode('module');
-        } else {
-            setIcon('view_list');
-            setViewMode('list');
-        }
-    }
+function Store() {
+  const [icon, setIcon] = useState("view_list");
+  const [viewMode, setViewMode] = useState("list");
 
-    return (
-        <>
-            <IconSwitch icon={icon} onSwitch={onSwitch}/>
-            <CardsView cards={products} viewMode={viewMode}/>
-        </>
-    )
+  const onSwitch = useCallback(() => {
+    setIcon((prevIcon) =>
+      prevIcon === "view_list" ? "view_module" : "view_list"
+    );
+    setViewMode((prevViewMode) =>
+      prevViewMode === "list" ? "module" : "list"
+    );
+  }, []);
+
+  return (
+    <>
+      <IconSwitch icon={icon} onSwitch={onSwitch} />
+      <CardsView cards={products} viewMode={viewMode} />
+    </>
+  );
 }
 
-Store.propTypes = {}
-
-export default Store
+export default Store;
